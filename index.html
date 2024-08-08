@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Embedded Web Chat</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ececec; /* Light background color */
+            display: flex;
+            flex-direction: column; /* Stack main content and footer vertically */
+            height: 100vh;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+
+        .container {
+            flex: 1; /* Allows container to grow and shrink as needed */
+            background-color: #ffffff; /* White background for iframe container */
+            border-radius: 0; /* No rounded corners */
+            box-shadow: none; /* No shadow */
+            overflow: hidden; /* Ensure no content overflows */
+            display: flex;
+            align-items: stretch; /* Ensure iframe stretches to fill the container */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            background-color: #0c546c; /* Footer background color */
+            color: #ffffff; /* Footer text color */
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://copilotstudio.microsoft.com/environments/Default-cee277c8-9ceb-4b05-95ef-59d45630412c/bots/cr6e2_copilot/webchat?__version__=2" 
+                title="Copilot Studio Web Chat">
+            <!-- Fallback content for browsers that do not support iframes -->
+            Your browser does not support iframes.
+        </iframe>
+    </div>
+
+    <footer>
+        &copy; 2024 Jeddah MoEnergy. All rights reserved.
+    </footer>
+</body>
+</h
